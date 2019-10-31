@@ -11,7 +11,7 @@ alias gitst="git status"
 alias gitaa="git add -A ."
 ```
 ## git reset
-- vrati svoje nove zmeny nad repozitarom na stav up to date nepouzivať dva krat po sebe lebo sa začneš presuvať stale o jeden commit spať
+- vrati svoje nove zmeny nad repozitarom na stav up to date nepouzivat dva krat po sebe lebo sa zacnes presuvat stale o jeden commit spať
 ```bash
 alias gitrh="git reset --hard"
 ```
@@ -19,12 +19,12 @@ alias gitrh="git reset --hard"
 ```bash
 alias gitrh="git reset --hard HEAD^" # git reset --hard HEAD^1
 ```
-- ak som pushol commit do repositara a chcem ho vratiť späť ->`git cm "message"` -> `git puf`
+- ak som pushol commit do repositara a chcem ho vratit spat ->`git cm "message"` -> `git puf`
 ```bash
 alias gitrsh="git reset --soft HEAD~" # git reset --soft HEAD~1
 ```
 ## checkout
-- vrati ma na predoslu branchu kde som bol pred tym
+- vrati ma na predoslu branchu kde som bol predtym
 ```bash
 alias gitco-="git checkout -"
 ```
@@ -42,11 +42,11 @@ alias gitcob="git checkout -b" # git checkout -b "nazov_branche"
 alias gitm="git merge" # git merge develop master ||| git merge "nazov_tvojej_branche" master
 ```
 ## commit
-- vytvorenie commitu musis definovat nazov commitu
+- vytvorenie commitu, musis definovat nazov commitu
 ```bash
 alias gitcm="git commit -m" # git commit -m "nazov_commitu"
 ```
-- ked chces do definovaneho commit vlozit dalsie upravy musis definovat cislo o kolko komitov chces urobit zmeny
+- ked chces do definovaneho commitu vlozit dalsie upravy musis definovat cislo o kolko komitov chces urobit zmeny
 ```bash
 alias gitcf="git commit --fixup" # git commit --fixup 1 -> git rebiad -> git ca -> git puf
 ```
@@ -54,12 +54,12 @@ alias gitcf="git commit --fixup" # git commit --fixup 1 -> git rebiad -> git ca 
 ```bash
 alias gitcan="git commit --amend --no-edit"
 ```
-- zmena nazvu predosleho commitu zaslem zmenu do predosleho commitu a mozem zmenit nazov commitu môžem aj hneď definovať novy nazov 
+- zmena nazvu predosleho commitu, zaslem zmenu do predosleho commitu a mozem zmenit nazov commitu, mozem aj hneď definovat novy nazov 
 ```bash
 alias gitcam="git commit --amend -m" # git commit --amend -m "novy_nazov_commitu"
 ```
 ## cherry-pick
-- skopiruje zmeny z ktorehokolvek pushnuteho commitu je nutne definovat hash commitu
+- skopiruje zmeny z ktorehokolvek pushnuteho commitu, je nutne definovat hash commitu
 ```bash
 alias gitcp="git cherry-pick" # git cherry-pick "1dd68ba"
 ```
@@ -68,11 +68,11 @@ alias gitcp="git cherry-pick" # git cherry-pick "1dd68ba"
 ```bash
 alias gitpu="git push"
 ```
-- pushnem vsetky zmeny do repositara na silu vacsinou sa to pouziva po gitca alebo po upravach rebasu
+- pushnem vsetky zmeny do repositara na silu, vacsinou sa to pouziva po gitca alebo po upravach rebasu
 ```bash
 alias gitpuf="git push -f"
 ```
-- tento prikaz je nutne pouziť ak si vytvoriš novu vetvu teda branchu a chceš ju pushnuť do orgiin aby ju videli aj kolegovia ale nechces ju pushnuť do mastra alebo develop branche
+- tento prikaz je nutne pouzit ak si vytvoris novu vetvu, teda branchu a chces ju pushnut do origin aby ju videli aj kolegovia ale nechces ju pushnuť do mastra alebo develop branche
 ```bash
 alias gitpus="git push -u origin HEAD"
 ```
@@ -89,7 +89,7 @@ alias gitstl="git stash list"
 ```bash
 alias gitstd="git stash drop" # git stash drop "nazov_ulozeneho_stashu"
 ```
-- chem na aktualnom mieste použiť zmeny zo stashu a nasledne ich zmazať zo stashu
+- chem na aktualnom mieste pouzit zmeny zo stashu a nasledne ich zmazat zo stashu
 ```bash
 alias gitstp="git stash pop" # git stash pop "nazov_ulozeneho_stashu"
 ```
